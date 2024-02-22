@@ -1,0 +1,247 @@
+:root {
+    --primary-color: #65647C;
+    --second-color: #4e3624;
+    --third-color: #594545;
+    --fouth-color: #F1D3B3;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--fouth-color);
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+/* Reset de estilos padrão para listas */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    text-align: right; /* Alinhar o conteúdo à direita */
+}
+
+nav ul {
+    display: inline-block; /* Manter a lista na mesma linha */
+}
+
+nav ul li {
+    display: inline; /* Exibir itens de lista na mesma linha */
+    margin-left: 20px; /* Adicionar espaçamento entre os itens */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remover margem esquerda do primeiro item */
+}
+
+nav a { 
+    color: var(--fouth-color); /* Cor do texto */
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição suave */
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: var(--fouth-color); /* Cor de fundo no hover */
+    color: var(--primary-color); /* Cor do texto no hover */
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição suave */
+}
+
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+section p {
+    color: var(--third-color);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--fouth-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: var(--fouth-color);
+    color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.about-box {
+    text-align: left;
+    flex-grow: 1; /* Faz a div ocupar o espaço restante */
+}
+
+.about-box h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.about-box p {
+    font-size: 16px;
+    color: var(--third-color);
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 50px; /* Espaçamento à direita da imagem */
+    margin-right: 50px;
+}
+
+.services-box {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.services-box h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.services-box h3 {
+    font-size: 18px;
+    color: var(--second-color);
+}
+
+.services-box p {
+    font-size: 16px;
+    color: var(--third-color);
+    margin-bottom: 15px;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0px 5px;
+}
+
+.events-container .events-box {
+    flex-basis: calc(33.33% - 1.5rem);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.events-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.events-container .events-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+    color: var(--second-color);
+}
+
+.events-container .events-box .events-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.events-container .events-box .events-content a {
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    color: var(--fouth-color); /* Alterando a cor do texto para preto */
+    background: var(--primary-color);
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer; /* Mudando o cursor para pointer */
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição suave */
+}
+
+.events-container .events-box .events-content a:hover {
+    background: var(--fouth-color);
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição suave */
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--fouth-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--fouth-color);
+    color: var(--primary-color);
+}
+
+
+/* Estilos para o formulário de contato */
+form {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+textarea {
+    height: 150px;
+}   
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--fouth-color);
+    padding: 20px;
+    text-align: center;
+}
+
